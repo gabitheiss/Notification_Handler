@@ -37,7 +37,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
     }
 
     fun showNotification(){
-        notificationHandler.createNotification("Notificação", "Testando notificações").run{
+        notificationHandler.createNotification("ALERTA", "Testando notificações, rodando ok!").run{
             val notificationManager = NotificationManagerCompat.from(requireContext())
             notificationManager.notify(1,this)
         }
